@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+  backend:
+    build: 
+      context: ./django
+    volumes:
+      - ./django/static:/django/static
+    expose:
+      - 8000
+    container_name: backend_delivery
+    command: gunicorn delivery.wsgi:application --bind 0.0.0.0:8000 
+    restart: always
+
+    environment:
+      - DB_HOST=db
+      - DB_NAME=delivery
+      - DB_USER=postgres
+      - DB_PASS=123
+
+    depends_on:
+      - db
+
+  db:
+    restart: always
+    image: postgres
+    container_name: postgres_db_delivery # can change this
+
+    environment:
+      - POSTGRES_DB=delivery
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+
+  
+  pgadmin:
+    container_name: pgadmin4
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ascendp07@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: araa23o385
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    depends_on:
+      - db
+    ports:
+      - "5051:80"
+    restart: unless-stopped
+
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - static:/static
+    ports:
+      - 8000:80
+    container_name: nginx
+    depends_on:
+      - backend
+
+
+volumes:
+  postgres_data:
+  pgadmin:
+  static:

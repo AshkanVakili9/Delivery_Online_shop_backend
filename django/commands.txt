@@ -1,0 +1,21 @@
+----> build image with name python-django
+docker build --tag python-django .
+
+
+----> run the container
+docker run --publish 8000:8000 python-django
+
+
+----> build image
+docker-compose build
+
+
+----> run the container and remove it after, and then create new projct in django
+docker-compose run --rm app django-admin startproject core .
+
+----> run the server
+docker-compose up
+
+
+----> for appiling migration and createsuperuser in container
+docker exec -it django_app /bin/bash
