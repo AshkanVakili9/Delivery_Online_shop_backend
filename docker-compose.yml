@@ -43,8 +43,8 @@ services:
     container_name: pgadmin4
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: ascendp07@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: araa23o385
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
     volumes:
       - pgadmin:/var/lib/pgadmin
     depends_on:
