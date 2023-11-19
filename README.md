@@ -46,7 +46,7 @@ this app contains comments, rate and adding product to favorite table.
 here is the cart model for the customers who can buy products.
 
 
-# delivery folder  Run The Proejct Without Docker
+# Run The Proejct Without Docker
 
 Explain how to get started with the project without docker and nginx, from installation to running the server.
 
