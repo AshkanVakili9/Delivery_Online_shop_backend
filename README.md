@@ -47,8 +47,8 @@ here is the cart model for the customers who can buy products.
 # delivery folder 
 contain django configurations.
 
-Run The Proejct Without Docker
 
+#Run The Proejct Without Docker
 
 Explain how to get started with the project without docker and nginx, from installation to running the server.
 
