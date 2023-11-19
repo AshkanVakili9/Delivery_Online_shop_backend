@@ -9,7 +9,7 @@ Technologies used: Django, django_rest_framework, Docker, Nginx.
 Purpose: The purpose of this project is to create an online shop backend that provides users with necessary features like product listings, cart management, order tracking and delivery system for costumers.
 
 
-# Setup and Running the Project
+# Setup and Run the Project
 
 Prerequisites
 
@@ -24,9 +24,9 @@ Steps
 
 * https://github.com/NoobstrGTR/Delivery_Online_shop_backend.git
 
-2. Move into the project directory and run docker-compose build to build the project.\n3. After the build process is complete, run docker-compose up to start the   project. 
+2. Move into the project directory and run "docker-compose up" to start the project. 
 
-3. Open your web browser and go to http://localhost:8000/ to view the app.
+3. Open your web browser and go to http://localhost:8000/ to view the app api's.
 
 
 # Project Structure
