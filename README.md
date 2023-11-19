@@ -44,11 +44,9 @@ this part include product models and like category subcategory tags images for p
 this app contains comments, rate and adding product to favorite table.
 # cart app 
 here is the cart model for the customers who can buy products.
-# delivery folder 
-contain django configurations.
 
 
-#Run The Proejct Without Docker
+# delivery folder  Run The Proejct Without Docker
 
 Explain how to get started with the project without docker and nginx, from installation to running the server.
 
