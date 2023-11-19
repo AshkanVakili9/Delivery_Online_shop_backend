@@ -72,4 +72,4 @@ Explain how to get started with the project without docker and nginx, from insta
 # Database Schema
 
 you can find the schema in a picture inside the directory named "Database_Schema.png"
-![alt text]([http://url/to/Database_Schema.png](https://github.com/AshkanVakili9/Delivery_Online_shop_backend/blob/main/django/Database_Schema.png)
+![alt text](https://github.com/AshkanVakili9/Delivery_Online_shop_backend/blob/main/django/Database_Schema.png)
